@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+.inputforms {
+  width: 1170px;
+  margin: 0 auto;
+}
+.inputbutton{
+  display: flex;
+  gap: 20px;
+}
+div button{
+  flex-basis: 10%;
+}
+
+.outerdiv{
+  width: 1170px;
+  margin: auto;
+}
+
+.outerdiv ol{
+  margin: 0px;
+  padding: 0px;
+  list-style: number;
+}
+.outerdiv ol li{
+  color: white;
+  background-color: black;
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+}
+.outerdiv ol li span{
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.list-group-item{
+  margin: 10px;
+}
+
+.completed{
+  text-decoration: line-through;
+  color: red !important;
+  background-color: rgb(6, 2, 238) !important;
+  list-style: none;
+}
+
+.tabsOuter{
+  width: 1570px;
+  margin: auto;
+}
+
+.tabsOuter ul{
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.tabsOuter ul li button{
+  background-color: rgb(238, 229, 229);
+  padding: 10px;
+  margin-right: 18px;
+  font-weight: bold;  
+  color: black;
+  border: none;
+}
+
+.activeButton{
+  background-color: red !important;
+  color: white !important;
+}
