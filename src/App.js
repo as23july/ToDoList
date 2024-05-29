@@ -39,24 +39,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className="tabsOuter">
-        <h1 style={{ textAlign: "left" }}>
-          {" "}
-          Resume Summary Experience and Education
-        </h1>
-        <ul>
-          {tabs.map((tabsItems, index) => {
-            return (
-              <li>
-                <button onClick={() => changeData(index)} className={activeTabs == index ? "activeButton" : ""}>{tabsItems.title}</button>
-              </li>
-            );
-          })}
-        </ul>
-        <p>
-          {activeContent}
-        </p>
-      </div>
       <h1> ToDo List</h1>
       <form onSubmit={saveToDoList}>
         <div className="inputforms">
@@ -102,7 +84,7 @@ function ToDoListItems({ value, indexNumber, todolist, setTodolist }) {
       className={status ? "completed list-group-item" : "list-group-item"}
     >
       {indexNumber + 1} {value}
-      <span onClick={deleteRow}>&times;</span>
+      <span onClick={deleteRow}>Remove</span>
     </li>
   );
 }
